@@ -1,0 +1,9 @@
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.menu-toggle button {
+  @apply text-white hover:text-gray-400 focus:outline-none;
+}
