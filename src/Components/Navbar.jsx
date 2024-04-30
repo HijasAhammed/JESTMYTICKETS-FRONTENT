@@ -9,10 +9,10 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-800">
+    <header className="backdrop-blur-xl shadow-lg shadow-cyan-500/50">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <div className="logo">
-          <a href="#" className="text-2xl font-bold text-white flex items-center">
+          <a href="#" className="text-2xl font-sans font-bold text-white flex items-center hover:text-cyan-500">
             <img src={Logo} alt="" className='w-16'/>JustMyTickets
           </a>
         </div>
