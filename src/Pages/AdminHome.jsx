@@ -1,4 +1,6 @@
 import React from 'react';
+import Addmovies from './Addmovies';
+import { Link } from 'react-router-dom';
 const Admin = () => {
   return (
     <div className="mt-8 bg-gray-100 p-6 rounded-lg shadow-md">
@@ -7,8 +9,7 @@ const Admin = () => {
   {/* <AddBanner /> */}
 </div>
       <div className="mt-8 bg-gray-100 p-6 rounded-lg shadow-md">
-  <h2 className="text-2xl font-bold mb-4">Add Movies</h2>
-  {/* <AddMovie /> */}
+  <Link to="/Addmovies"><h2 className="text-2xl font-bold mb-4">Add Movies</h2></Link>
 </div>
 
 <div className="mt-8 bg-gray-100 p-6 rounded-lg shadow-md">
