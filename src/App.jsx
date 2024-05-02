@@ -9,6 +9,7 @@ import Login from './Pages/Login'
 import Userhome from './Pages/Userhome'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Addbanner from './Pages/Addbanner'
+import Userlist from './Pages/Admin/Userlist'
 
 
 function App() {
@@ -23,9 +24,11 @@ function App() {
       <Route path='/addmovies' element={<Addmovies/>}></Route>
       <Route path='/bannerlist' element={ <Bannerlist/>}></Route>
       <Route path='/addbanner' element={<Addbanner/>}></Route>
+      <Route path='/userlist' element={<Userlist/>}></Route>
       </Routes>
       <Footer/>
       </BrowserRouter>
+    
     </div>
   )
 }
