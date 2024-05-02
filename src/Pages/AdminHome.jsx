@@ -12,7 +12,7 @@ const Admin = () => {
 </div>
 
 <div className="mt-8 bg-gray-100 p-6 rounded-lg shadow-md">
-  <Link to="/addbanner"><h2 className="text-2xl font-bold mb-4">Add Banner</h2></Link>
+  <Link to="/bannerlist"><h2 className="text-2xl font-bold mb-4">Add Banner</h2></Link>
 </div>
 
 <div className="mt-8 bg-gray-100 p-6 rounded-lg shadow-md">

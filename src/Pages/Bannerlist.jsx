@@ -1,12 +1,10 @@
 import React from 'react';
-
+import{Link} from 'react-router-dom'
 const Addbanner = () => {
   return (
     <div className="bg-white p-4">
       <div className="mb-4">
-        <button className="bg-black text-white px-4 py-2 rounded-md hover:text-cyan-500">
-          Add Banner  
-        </button>
+        <Link to="/addbanner">        <button className="bg-black text-white px-4 py-2 rounded-md hover:text-cyan-500">Add Banner</button></Link>
       </div>
       <div>
         <label className="text-gray-700 block font-semibold mb-2">Banners</label>

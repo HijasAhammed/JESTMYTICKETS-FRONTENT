@@ -8,6 +8,7 @@ import Adminlogin from './Pages/Adminlogin'
 import Login from './Pages/Login'
 import Userhome from './Pages/Userhome'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Addbanner from './Pages/Addbanner'
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
       <Route path='/adminhome' element={<AdminHome/>}></Route>
       <Route path='/adminlogin' element={<Adminlogin/>}></Route>
       <Route path='/addmovies' element={<Addmovies/>}></Route>
-      <Route path='/addbanner' element={ <Bannerlist/>}></Route>
+      <Route path='/bannerlist' element={ <Bannerlist/>}></Route>
+      <Route path='/addbanner' element={<Addbanner/>}></Route>
       </Routes>
       <Footer/>
       </BrowserRouter>
