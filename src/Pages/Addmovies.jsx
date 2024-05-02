@@ -56,7 +56,7 @@ const Addmovies = () => {
   </div>
   <button
     type="submit"
-    className="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition-colors duration-300"
+    className="bg-black text-white px-4 py-2 rounded-md hover:text-cyan-500"
     >Add Movie
   </button>
 </div>
