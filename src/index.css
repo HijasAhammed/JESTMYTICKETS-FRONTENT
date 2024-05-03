@@ -4,6 +4,6 @@
 @tailwind utilities;
 
 /* Custom styles */
-.menu-toggle button {
+/* .menu-toggle button {
   @apply text-white hover:text-gray-400 focus:outline-none;
-}
+} */

@@ -1,15 +1,16 @@
 import './App.css'
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
-import Bannerlist from './Pages/Bannerlist'
-import Addmovies from './Pages/Addmovies'
-import AdminHome from './Pages/AdminHome'
-import Adminlogin from './Pages/Adminlogin'
+import Bannerlist from './Pages/Admin/Bannerlist'
+import Addmovies from './Pages/Admin/Addmovies'
+import AdminHome from './Pages/Admin/AdminHome'
+import Adminlogin from './Pages/Admin/Adminlogin'
 import Login from './Pages/Login'
 import Userhome from './Pages/Userhome'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Addbanner from './Pages/Addbanner'
+import Addbanner from './Pages/Admin/Addbanner'
 import Userlist from './Pages/Admin/Userlist'
+import Movielist from './Pages/Admin/Movielist'
 
 
 function App() {
@@ -25,7 +26,9 @@ function App() {
       <Route path='/bannerlist' element={ <Bannerlist/>}></Route>
       <Route path='/addbanner' element={<Addbanner/>}></Route>
       <Route path='/userlist' element={<Userlist/>}></Route>
+      <Route path='/movielist' element={<Movielist/>}></Route>
       </Routes>
+   
       <Footer/>
       </BrowserRouter>
     
