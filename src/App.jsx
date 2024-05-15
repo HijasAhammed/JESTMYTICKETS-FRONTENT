@@ -11,6 +11,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Addbanner from './Pages/Admin/Addbanner'
 import Userlist from './Pages/Admin/Userlist'
 import Movielist from './Pages/Admin/Movielist'
+import Bookings from './Pages/Admin/Bookings'
+import OwnersHome from './Pages/TheatreOwner/OwnersHome'
 
 
 function App() {
@@ -27,8 +29,9 @@ function App() {
       <Route path='/addbanner' element={<Addbanner/>}></Route>
       <Route path='/userlist' element={<Userlist/>}></Route>
       <Route path='/movielist' element={<Movielist/>}></Route>
+      <Route path='/bookings' element={<Bookings/>}></Route>
+      <Route path='/owenerhome'element={<OwnersHome/>}></Route>
       </Routes>
-   
       <Footer/>
       </BrowserRouter>
     
