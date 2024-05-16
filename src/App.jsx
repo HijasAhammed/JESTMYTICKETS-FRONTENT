@@ -13,6 +13,7 @@ import Userlist from './Pages/Admin/Userlist'
 import Movielist from './Pages/Admin/Movielist'
 import Bookings from './Pages/Admin/Bookings'
 import OwnersHome from './Pages/TheatreOwner/OwnersHome'
+import Theatoreowners from './Pages/Admin/Theatoreowners'
 
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
       <Route path='/userlist' element={<Userlist/>}></Route>
       <Route path='/movielist' element={<Movielist/>}></Route>
       <Route path='/bookings' element={<Bookings/>}></Route>
-      <Route path='/owenerhome'element={<OwnersHome/>}></Route>
+      <Route path='/ownerhome' element={<OwnersHome/>}></Route>
+      <Route path='/Theatoreowners' element={<Theatoreowners/>}></Route>
       </Routes>
       <Footer/>
       </BrowserRouter>
