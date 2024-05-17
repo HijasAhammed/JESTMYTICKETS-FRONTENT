@@ -2,7 +2,7 @@ import './App.css'
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
 import Bannerlist from './Pages/Admin/Bannerlist'
-import Addmovies from './Pages/Admin/Addmovies'
+import Addmovies from './Pages/TheatreOwner/Addmovies'
 import AdminHome from './Pages/Admin/AdminHome'
 import Adminlogin from './Pages/Admin/Adminlogin'
 import Login from './Pages/Login'
@@ -10,13 +10,25 @@ import Userhome from './Pages/Userhome'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Addbanner from './Pages/Admin/Addbanner'
 import Userlist from './Pages/Admin/Userlist'
-import Movielist from './Pages/Admin/Movielist'
+import Movielist from './Pages/TheatreOwner/Movielist'
 import Bookings from './Pages/Admin/Bookings'
 import OwnersHome from './Pages/TheatreOwner/OwnersHome'
 import Theatoreowners from './Pages/Admin/Theatoreowners'
-
+import { backendURL } from "../config";
+import axios from 'axios'
+import { useEffect } from 'react'
 
 function App() {
+  useEffect(()=>{
+    const fetchData =async ()=>{
+      try {
+        const response = await axios.get(`${backendURL}/api/data`)
+        console.log(response.data)
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  })
   return (
     <div className='bg-black'>
       <BrowserRouter>

@@ -6,11 +6,11 @@ const Movielist = () => {
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold mb-6">Movie List</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden h-100 w-64">
             <img
               src="https://via.placeholder.com/150"
               alt="Movie Poster"
-              className="w-full h-48 object-cover"
+              className="h-80 w-64 object-cover"
             />
             <div className="p-4">
               <h2 className="text-lg font-semibold mb-2">Movie Title</h2>
