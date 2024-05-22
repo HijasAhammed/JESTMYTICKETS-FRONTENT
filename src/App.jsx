@@ -17,7 +17,7 @@ import Theatoreowners from './Pages/Admin/Theatoreowners'
 import { backendURL } from "../config";
 import axios from 'axios'
 import { useEffect } from 'react'
-
+import Screens from './Pages/TheatreOwner/Screens'
 function App() {
   useEffect(()=>{
     const fetchData =async ()=>{
@@ -45,6 +45,7 @@ function App() {
       <Route path='/bookings' element={<Bookings/>}></Route>
       <Route path='/ownerhome' element={<OwnersHome/>}></Route>
       <Route path='/Theatoreowners' element={<Theatoreowners/>}></Route>
+      <Route path='/screens' element={<Screens/>}></Route>
       </Routes>
       <Footer/>
       </BrowserRouter>

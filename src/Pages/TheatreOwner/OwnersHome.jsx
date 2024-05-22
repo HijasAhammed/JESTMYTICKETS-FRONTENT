@@ -25,7 +25,7 @@ const OwnersHome = () => {
         </Link>
       </div>
       <div className="mt-8 bg-gray-100 p-6 rounded-lg shadow-md">
-        <Link to='/movielist'>
+        <Link to='/screens'>
           <h2 className="text-2xl font-bold mb-4">Screens</h2>
         </Link>
       </div>
