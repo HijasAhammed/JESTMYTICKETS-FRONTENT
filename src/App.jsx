@@ -18,6 +18,8 @@ import { backendURL } from "../config";
 import axios from 'axios'
 import { useEffect } from 'react'
 import Screens from './Pages/TheatreOwner/Screens'
+import Addscreens from './Pages/TheatreOwner/Addscreens'
+
 function App() {
   useEffect(()=>{
     const fetchData =async ()=>{
@@ -46,6 +48,7 @@ function App() {
       <Route path='/ownerhome' element={<OwnersHome/>}></Route>
       <Route path='/Theatoreowners' element={<Theatoreowners/>}></Route>
       <Route path='/screens' element={<Screens/>}></Route>
+      <Route path='/addscreens' element={<Addscreens/>}></Route>
       </Routes>
       <Footer/>
       </BrowserRouter>
